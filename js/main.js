@@ -1,14 +1,35 @@
 const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        header.classList.add('active');
-    } else {
-        header.classList.remove('active');
-    }
-});
+const hero = document.querySelector('#hero');
+const heroPage = document.querySelector('.hero-page');
+
+const sectionOptions = {
+    rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            header.classList.add('active')
+        } else {
+            header.classList.remove('active')
+        }
+    })
+}, sectionOptions);
+
+sectionObserver.observe(heroPage);
+
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 100) {
+//         header.classList.add('active');
+//     } else {
+//         header.classList.remove('active');
+//     }
+// });
+
+
 
 const toggle = document.querySelector('.toggle');
-const navbar = document.querySelector('.nav-list');
+const navbar = document.querySelector('#navbar');
 
 toggle.addEventListener('click', () => {
     navbar.classList.toggle('active');

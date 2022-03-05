@@ -222,44 +222,81 @@ header{
     right: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-color: transparent;
     z-index: 100;
-    padding: 1.5rem 0;
-    
-    .logo{
-        font-size: 36px;
-        color: $white;
-    }
 
     // NAVBAR
     #navbar{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav-list{
-        display: flex;
-        align-items: center;
-        
-        .nav-item{
-            .nav-link{
-                padding: 0 1rem;
-                font-size: 20px;
-                font-weight: 300;
-                color: $white;
-                transition: 0.3s ease-in-out;
-                
-                &:hover{
+        padding: .2rem;
+        height: 0rem;
+        min-height: 10vh;
+        overflow: hidden;
+        transition: height 1.5s ease-in-out;
+        max-width: 1300px;
+        margin: 0 auto;
+        .nav-menu{
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .navbar-brand{
+                a{
                     color: $white;
+                        font-size: 1.6rem;
+                        padding: 1rem 0;
+                        display: block;
+                        transition: .3s ease-in-out;
+
+                        &:hover{
+                            color: $darkBlue;
+                        }
                 }
             }
-        }
-    }
+
+            .toggle {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                cursor: pointer;
+                display: none;
         
+                .toggle-icons {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 1.7rem 0;
+        
+                    i {
+                        color: $darkText;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .nav-list{
+                display: flex;
+                margin: 0;
+                margin-top: 10px;
+                
+                .nav-item{
+                    .nav-link{
+                        padding: 1.6rem 1rem;
+                        font-size: 1.1rem;
+                        position: relative;
+                        font-weight: 300;
+                        color: $white;
+                        transition: 0.3s ease-in-out;
+                        
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }     
 }
 
 #request-quote-container{
@@ -914,42 +951,82 @@ header{
     header{
         background: #fff;
         z-index: 1000;
-        .logo{
-            color: #000;
-            font-size: 32px !important;
-        }
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+       
         #navbar{
-            color: #000;
-            flex-wrap: wrap;
             z-index: 1000;
-            .toggle{
-                display: block;
-                color: #000;
-            }
-            .nav-list{ 
-                display: none !important;
-                text-align: center;
-                &.active{
-                    display: block !important;
-                }
-                .nav-item{
-                    width: 100%;
-                    display: inline-block;
-                    
+            &.active{
+                height: 27rem;
+             }
+            .nav-menu{
+                flex-direction: column;
+                .navbar-brand{
+                    align-self: start;
+                    padding-left: 15px;
+
                     a{
-                    color: #000;
-                    padding: 1rem;
-                    display: block;
+                        font-size: 24px;
+                        color: #000;
+
+                        &:hover{
+                            color: $darkBlue;
+                        }
+                    }
                 }
-            }
-            .light-btn{
-                display: block !important;
-                color: #000 !important;
-                // border-color: #000;
-                transition: none;
-                font-size: 20px;
-                font-weight: 300;
-            }
+                .toggle{
+                    display: block;
+                    .toggle-icons{
+                        i{   
+                            color: #000;
+                        }
+                    }
+                }
+                .nav-list{ 
+                    flex-direction: column;
+                    width: 100%;
+                    
+                    .nav-item{
+                        width: 100%;
+                        text-align: center;
+                        &:hover{
+                            background: #000;
+                        }
+
+                        &:hover a{
+                            background: #fff;
+                        }
+                        
+                        .nav-link{
+                            text-align: center;
+                            color: #000;
+                            padding: 1rem;
+                            display: block;
+
+                            &:hover{
+                                background: #000;
+                            }
+    
+                            &:hover a{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .light-btn{
+                        text-align: center;
+                        display: block !important;
+                        color: #000 !important;
+                        // border-color: #000;
+                        transition: none;
+                        font-size: 1.1rem;
+                        font-weight: 300;
+
+                        &:hover{
+                            background: #000;
+                            color: #fff !important;
+                        }
+
+                    }
+                }
         }
     }
     .light-btn{
@@ -994,6 +1071,10 @@ header{
     #statistics{
         .columns{
             flex-wrap: wrap;
+
+            .col{
+                width: 100%;
+            }
         }
     }
 
@@ -1104,7 +1185,7 @@ header{
     }
     .hero-page{
         h1{
-            font-size: 48px !important;
+            font-size: 42px !important;
         }
     }
 }

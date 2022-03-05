@@ -217,40 +217,75 @@ header {
   right: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   background-color: transparent;
   z-index: 100;
-  padding: 1.5rem 0;
-}
-
-header .logo {
-  font-size: 36px;
-  color: #fff;
 }
 
 header #navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  padding: .2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1.5s ease-in-out;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-header .nav-list {
-  display: flex;
+header #navbar .nav-menu {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
-header .nav-list .nav-item .nav-link {
-  padding: 0 1rem;
-  font-size: 20px;
+header #navbar .nav-menu .navbar-brand a {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
+header #navbar .nav-menu .navbar-brand a:hover {
+  color: #83a7c8;
+}
+
+header #navbar .nav-menu .toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+header #navbar .nav-menu .toggle .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+header #navbar .nav-menu .toggle .toggle-icons i {
+  color: #1b1b1b;
+  font-size: 1.4rem;
+}
+
+header #navbar .nav-menu .nav-list {
+  display: flex;
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #navbar .nav-menu .nav-list .nav-item .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
   font-weight: 300;
   color: #fff;
   transition: 0.3s ease-in-out;
 }
 
-header .nav-list .nav-item .nav-link:hover {
+header #navbar .nav-menu .nav-list .nav-item .nav-link:hover {
   color: #fff;
 }
 
@@ -909,42 +944,71 @@ header .nav-list .nav-item .nav-link:hover {
   header {
     background: #fff;
     z-index: 1000;
-  }
-  header .logo {
-    color: #000;
-    font-size: 32px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   header #navbar {
-    color: #000;
-    flex-wrap: wrap;
     z-index: 1000;
   }
-  header #navbar .toggle {
-    display: block;
+  header #navbar.active {
+    height: 27rem;
+  }
+  header #navbar .nav-menu {
+    flex-direction: column;
+  }
+  header #navbar .nav-menu .navbar-brand {
+    align-self: start;
+    padding-left: 15px;
+  }
+  header #navbar .nav-menu .navbar-brand a {
+    font-size: 24px;
     color: #000;
   }
-  header #navbar .nav-list {
-    display: none !important;
+  header #navbar .nav-menu .navbar-brand a:hover {
+    color: #83a7c8;
+  }
+  header #navbar .nav-menu .toggle {
+    display: block;
+  }
+  header #navbar .nav-menu .toggle .toggle-icons i {
+    color: #000;
+  }
+  header #navbar .nav-menu .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  header #navbar .nav-menu .nav-list .nav-item {
+    width: 100%;
     text-align: center;
   }
-  header #navbar .nav-list.active {
-    display: block !important;
+  header #navbar .nav-menu .nav-list .nav-item:hover {
+    background: #000;
   }
-  header #navbar .nav-list .nav-item {
-    width: 100%;
-    display: inline-block;
+  header #navbar .nav-menu .nav-list .nav-item:hover a {
+    background: #fff;
   }
-  header #navbar .nav-list .nav-item a {
+  header #navbar .nav-menu .nav-list .nav-item .nav-link {
+    text-align: center;
     color: #000;
     padding: 1rem;
     display: block;
   }
-  header #navbar .nav-list .light-btn {
+  header #navbar .nav-menu .nav-list .nav-item .nav-link:hover {
+    background: #000;
+  }
+  header #navbar .nav-menu .nav-list .nav-item .nav-link:hover a {
+    color: #fff;
+  }
+  header #navbar .nav-menu .nav-list .light-btn {
+    text-align: center;
     display: block !important;
     color: #000 !important;
     transition: none;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 300;
+  }
+  header #navbar .nav-menu .nav-list .light-btn:hover {
+    background: #000;
+    color: #fff !important;
   }
   header .light-btn {
     display: none !important;
@@ -968,6 +1032,9 @@ header .nav-list .nav-item .nav-link:hover {
   }
   #statistics .columns {
     flex-wrap: wrap;
+  }
+  #statistics .columns .col {
+    width: 100%;
   }
   #expertise-in-development .section-heading h1 {
     font-size: 40px !important;
@@ -1040,7 +1107,7 @@ header .nav-list .nav-item .nav-link:hover {
     display: block !important;
   }
   .hero-page h1 {
-    font-size: 48px !important;
+    font-size: 42px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
