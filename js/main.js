@@ -1,3 +1,8 @@
+// get year
+const year = document.querySelector('#year');
+const date = new Date();
+year.innerHTML = date.getFullYear();
+
 const header = document.querySelector('header');
 const hero = document.querySelector('#hero');
 const heroPage = document.querySelector('.hero-page');
@@ -17,16 +22,6 @@ const sectionObserver = new IntersectionObserver(function (entries) {
 }, sectionOptions);
 
 sectionObserver.observe(heroPage);
-
-// window.addEventListener('scroll', () => {
-//     if (window.scrollY > 100) {
-//         header.classList.add('active');
-//     } else {
-//         header.classList.remove('active');
-//     }
-// });
-
-
 
 const toggle = document.querySelector('.toggle');
 const navbar = document.querySelector('#navbar');
