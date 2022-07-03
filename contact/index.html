@@ -1,187 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Contact | Digital Agency</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/widescreen.css" />
 
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="/index.html" class="logo">Pure Digital</a>
-                </div>
-                <div class="toggle" id="toggler">
-                    <div class="toggle-icons">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <a class="light-btn mobile-view" href="/request_quote">Request A Quote</a>
-                </ul>
-                <a class="light-btn" href="/request_quote">Request A Quote</a>
-            </div>
-        </nav>
-    </header>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a href="/home" class="navbar-brand logo">Pure Digital</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
+              <li class="nav-item">
+                <a href="/services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact" class="nav-link active">Contact</a>
+              </li>
+              <form class="form-inline d-none align-self-center ms-2">
+                  <a href class="btn light-btn"">Request A Quote</a>
+                </form>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <a class="light-btn" href="/request_quote">Request A Quote</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <div class="hero-page contact-hero">
-        <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
     </div>
 
     <section id="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="columns">
-                    <div class="col contact-info">
-                        <h1>Let's Chat.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem eum praesentium
-                            rerum
-                            sapiente totam, quo id enim iure modi.</p>
-                        <div class="columns info">
-                            <div class="col">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="col">
-                                <h3>Our Address</h3>
-                                <p>111 fake street</p>
-                            </div>
-                        </div>
-                        <div class="columns info">
-                            <div class="col">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="col">
-                                <h3>Phone Number</h3>
-                                <p>123-456-7890</p>
-                            </div>
-                        </div>
-                        <div class="columns info">
-                            <div class="col">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="col">
-                                <h3>Email Address</h3>
-                                <p>Agency@gmail.com</p>
-                            </div>
-                        </div>
+      <div class="container">
+        <div class="contact-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-md-4">
+              <div class="contact-info">
+                <h1>Let's Chat.</h1>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  exercitationem eum praesentium rerum sapiente totam, quo id
+                  enim iure modi.
+                </p>
+                <div class="row g-2">
+                  <div class="col-1 col-lg-1 col-md-1 col-sm-1">
+                    <div class="info-icon">
+                      <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="col contact-form">
-                        <form action="">
-                            <input type="text" placeholder="Name...">
-                            <input type="text" placeholder="Phone...">
-                            <input type="email" placeholder="Email...">
-                            <textarea name="message" id="message" cols="30" rows="40"
-                                placeholder="Message..."></textarea>
-                            <input type="submit" value="Send" class="dark-btn">
-                        </form>
+                  </div>
+                  <div class="col-11 col-lg-11 col-md-11 col-sm-11">
+                    <div class="info">
+                      <h3>Our Address</h3>
+                      <p>111 fake street</p>
                     </div>
+                  </div>
                 </div>
+                <div class="row g-2">
+                  <div class="col-1 col-lg-1 col-md-1 col-sm-1">
+                    <div class="info-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                  </div>
+                  <div class="col-11 col-lg-11 col-md-11 col-sm-11">
+                    <div class="info">
+                      <h3>Phone Number</h3>
+                      <p>123-456-7890</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col-1 col-lg-1 col-md-1 col-sm-1">
+                    <div class="info-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="col-11 col-lg-11 col-md-11 col-sm-11">
+                    <div class="info">
+                      <h3>Email Address</h3>
+                      <p>Agency@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="contact-form">
+                <form action="">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Name..."
+                  />
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Phone..."
+                  />
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email..."
+                  />
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="40"
+                    placeholder="Message..."
+                  ></textarea>
+                  <input type="submit" value="Send" class="dark-btn" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="col">
-                    <h1>
-                        <a href="../index.html" class="logo">Pure Digital</a>
-                    </h1>
-                    <div class="social-media-container">
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Company</a></h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Values</a></li>
-                        <li><a href="#">Quality Assurance</a></li>
-                        <li><a href="#">Partnership</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Careers</a></h3>
-                    <ul>
-                        <li><a href="#">Job</a></li>
-                        <li><a href="#">Intership</a></li>
-                        <li><a href="#">Apply</a></li>
-                    </ul>
-                    <h3><a href="#">Clients</a></h3>
-                    <ul>
-                        <li><a href="#">Our Clients</a></li>
-                        <li><a href="#">Industries</a></li>
-                        <li><a href="#">Client Reviews</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Contact Us</a></h3>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Request A Quote</a></li>
-                        <li><a href="#">News & Press</a></li>
-                        <li><a href="#">FAQS</a></li>
-                    </ul>
-                    <h3><a href="#">Our Works</a></h3>
-                    <ul>
-                        <li><a href="#">Our Portfolio</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Services</a></h3>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Branding & Multimedia Designing</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-12">
+            <h1>
+              <a href="index.html" class="logo">Pure Digital</a>
+            </h1>
+            <div class="d-flex align-items-center">
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="bottom-footer">
-                <p>&copy; VictorAyala <span id="year"></span></p>
-            </div>
+          <div class="col-md-2">
+            <h3><a href="#">Company</a></h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Partnership</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Careers</a></h3>
+            <ul>
+              <li><a href="#">Job</a></li>
+              <li><a href="#">Intership</a></li>
+              <li><a href="#">Apply</a></li>
+            </ul>
+            <h3><a href="#">Clients</a></h3>
+            <ul>
+              <li><a href="#">Our Clients</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Client Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Contact Us</a></h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Request A Quote</a></li>
+              <li><a href="#">News & Press</a></li>
+              <li><a href="#">FAQS</a></li>
+            </ul>
+            <h3><a href="#">Our Works</a></h3>
+            <ul>
+              <li><a href="#">Our Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Branding & Multimedia Designing</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-</body>
-<script src="/js/main.js"></script>
 
+        <div class="bottom-footer">
+          <p>
+            &copy; VictorAyala
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="/js/main.js"></script>
 </html>

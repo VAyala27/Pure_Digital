@@ -4,10 +4,10 @@ const date = new Date();
 year.innerHTML = date.getFullYear();
 
 const navbar = document.querySelector('.navbar');
-const heroPage = document.querySelector('.hero-page');
+const hero = document.querySelector('#hero');
 
 const sectionOptions = {
-    rootMargin: "-350px 0px 0px 0px"
+    rootMargin: "-550px 0px 0px 0px"
 };
 
 const sectionObserver = new IntersectionObserver(function (entries) {
@@ -20,7 +20,7 @@ const sectionObserver = new IntersectionObserver(function (entries) {
     })
 }, sectionOptions);
 
-sectionObserver.observe(heroPage);
+sectionObserver.observe(hero);
 
 $(document).ready(function () {
     $(".css-transitions-only-after-page-load").each(function (index, element) {

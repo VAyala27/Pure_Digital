@@ -1,154 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Request A Quote | Digital Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/widescreen.css">
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="/index.html" class="logo">Pure Digital</a>
-                </div>
-                <div class="toggle" id="toggler">
-                    <div class="toggle-icons">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <a class="light-btn mobile-view" href="/request_quote">Request A Quote</a>
-                </ul>
-                <a class="light-btn" href="/request_quote">Request A Quote</a>
-            </div>
-        </nav>
-    </header>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a href="/home" class="navbar-brand logo">Pure Digital</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
+              <li class="nav-item">
+                <a href="/services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact" class="nav-link">Contact</a>
+              </li>
+              <form class="form-inline d-none align-self-center ms-2">
+                  <a href class="btn light-btn"">Request A Quote</a>
+                </form>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <a class="light-btn active" href="/request_quote">Request A Quote</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <div class="hero-page request-hero">
-        <h1>Request A Quote</h1>
+      <h1>Request A Quote</h1>
     </div>
 
     <section id="request-quote">
-        <div class="container">
-            <h1>What can we do for your business? </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum asperiores, officiis, accusantium sapiente
-                in accusamus labore expedita veritatis adipisci quod repudiandae rerum itaque aperiam excepturi?</p>
+      <div class="container">
+        <h1>What can we do for your business?</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+          asperiores, officiis, accusantium sapiente in accusamus labore
+          expedita veritatis adipisci quod repudiandae rerum itaque aperiam
+          excepturi?
+        </p>
 
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Name...">
-                <input type="email" name="email" id="email" placeholder="Email...">
-                <input type="text" name="company" id="company" placeholder="Company...">
-                <input type="text" name="mobile" id="mobile" placeholder="Mobile...">
-                <textarea name="message" id="message" cols="50" rows="50" placeholder="Message..."></textarea>
-                <input type="submit" class="dark-btn" value="Submit">
-            </form>
-        </div>
+        <form action="">
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name..."
+          />
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email..."
+          />
+          <input
+            class="form-control"
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Company..."
+          />
+          <input
+            class="form-control"
+            type="text"
+            name="mobile"
+            id="mobile"
+            placeholder="Mobile..."
+          />
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            cols="50"
+            rows="50"
+            placeholder="Message..."
+          ></textarea>
+          <input type="submit" class="dark-btn" value="Submit" />
+        </form>
+      </div>
     </section>
 
     <section id="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="col">
-                    <h1>
-                        <a href="../index.html" class="logo">Pure Digital</a>
-                    </h1>
-                    <div class="social-media-container">
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Company</a></h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Values</a></li>
-                        <li><a href="#">Quality Assurance</a></li>
-                        <li><a href="#">Partnership</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Careers</a></h3>
-                    <ul>
-                        <li><a href="#">Job</a></li>
-                        <li><a href="#">Intership</a></li>
-                        <li><a href="#">Apply</a></li>
-                    </ul>
-                    <h3><a href="#">Clients</a></h3>
-                    <ul>
-                        <li><a href="#">Our Clients</a></li>
-                        <li><a href="#">Industries</a></li>
-                        <li><a href="#">Client Reviews</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Contact Us</a></h3>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Request A Quote</a></li>
-                        <li><a href="#">News & Press</a></li>
-                        <li><a href="#">FAQS</a></li>
-                    </ul>
-                    <h3><a href="#">Our Works</a></h3>
-                    <ul>
-                        <li><a href="#">Our Portfolio</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Services</a></h3>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Branding & Multimedia Designing</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-12">
+            <h1>
+              <a href="index.html" class="logo">Pure Digital</a>
+            </h1>
+            <div class="d-flex align-items-center">
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="bottom-footer">
-                <p>&copy; VictorAyala <span id="year"></span></p>
-            </div>
+          <div class="col-md-2">
+            <h3><a href="#">Company</a></h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Partnership</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Careers</a></h3>
+            <ul>
+              <li><a href="#">Job</a></li>
+              <li><a href="#">Intership</a></li>
+              <li><a href="#">Apply</a></li>
+            </ul>
+            <h3><a href="#">Clients</a></h3>
+            <ul>
+              <li><a href="#">Our Clients</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Client Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Contact Us</a></h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Request A Quote</a></li>
+              <li><a href="#">News & Press</a></li>
+              <li><a href="#">FAQS</a></li>
+            </ul>
+            <h3><a href="#">Our Works</a></h3>
+            <ul>
+              <li><a href="#">Our Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Branding & Multimedia Designing</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="bottom-footer">
+          <p>
+            &copy; VictorAyala
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
     </section>
-</body>
-
-<script src="/js/main.js"></script>
-
+  </body>
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="/js/main.js"></script>
 </html>

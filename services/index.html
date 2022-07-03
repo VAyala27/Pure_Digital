@@ -1,207 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Services | Digital Agency</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/widescreen.css" />
 
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-menu">
-                <div class="navbar-brand">
-                    <a href="/index.html" class="logo">Pure Digital</a>
-                </div>
-                <div class="toggle" id="toggler">
-                    <div class="toggle-icons">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
-                    <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                    <a class="light-btn mobile-view" href="/request_quote">Request A Quote</a>
-                </ul>
-                <a class="light-btn" href="/request_quote">Request A Quote</a>
-            </div>
-        </nav>
-    </header>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a href="/home" class="navbar-brand logo">Pure Digital</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
+              <li class="nav-item">
+                <a href="/services" class="nav-link active">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="/contact" class="nav-link">Contact</a>
+              </li>
+              <form class="form-inline d-none align-self-center ms-2">
+                  <a href class="btn light-btn"">Request A Quote</a>
+                </form>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <a class="light-btn" href="/request_quote">Request A Quote</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <div class="hero-page services-hero">
-        <h1>Our Services</h1>
+      <h1>Our Services</h1>
     </div>
 
     <section id="services">
-        <div class="columns">
-            <div class="col service">
-                <h2>Web Designing</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias neque asperiores,
-                    dolorem voluptas animi nam corrupti fugiat saepe. Accusamus temporibus, labore omnis natus
-                    consectetur dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo excepturi a,
-                    nostrum, velit quis consequatur iste fugit beatae sed eligendi perspiciatis ratione porro eum?
-                    Pariatur officia eveniet quae et blanditiis veritatis placeat, animi nihil obcaecati tempore id
-                    saepe provident porro neque eligendi atque dolore veniam amet velit ex illum. Eveniet, est.
-                    Ratione vel ullam omnis dicta esse consequuntur dolore reiciendis asperiores explicabo ex eos
-                    inventore quis enim et pariatur sit rem fugit quia, natus maiores?</p>
-            </div>
-            <div class="col service-img">
-                <img src="https://cdn2.hubspot.net/hubfs/53/web-design-statistics-2020.jpg" class="img-fluid" alt="">
-            </div>
+      <div class="d-flex justify-content-center align-items-start columns">
+        <div class="service">
+          <h2>Web Designing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias neque asperiores, dolorem voluptas animi nam corrupti
+            fugiat saepe. Accusamus temporibus, labore omnis natus consectetur
+            dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo
+            excepturi a, nostrum, velit quis consequatur iste fugit beatae sed
+            eligendi perspiciatis ratione porro eum? Pariatur officia eveniet
+            quae et blanditiis veritatis placeat, animi nihil obcaecati tempore
+            id saepe provident porro neque eligendi atque dolore veniam amet
+            velit ex illum. Eveniet, est. Ratione vel ullam omnis dicta esse
+            consequuntur dolore reiciendis asperiores explicabo ex eos inventore
+            quis enim et pariatur sit rem fugit quia, natus maiores?
+          </p>
         </div>
-        <div class="columns bg-gray">
-            <div class="col service-img">
-                <img src="https://www.usnews.com/dims4/USNEWS/7a6fb8a/2147483647/crop/2000x1334%2B0%2B2/resize/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F65%2F62%2Fc9cb60d24ac89d56462b1228574a%2F201009-codingcomputer-stock.jpg"
-                    class="img-fluid" alt="">
-            </div>
-            <div class="col service">
-                <h2>Web Development</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias neque asperiores,
-                    dolorem voluptas animi nam corrupti fugiat saepe. Accusamus temporibus, labore omnis natus
-                    consectetur dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo excepturi a,
-                    nostrum, velit quis consequatur iste fugit beatae sed eligendi perspiciatis ratione porro eum?
-                    Pariatur officia eveniet quae et blanditiis veritatis placeat, animi nihil obcaecati tempore id
-                    saepe provident porro neque eligendi atque dolore veniam amet velit ex illum. Eveniet, est.
-                    Ratione vel ullam omnis dicta esse consequuntur dolore reiciendis asperiores explicabo ex eos
-                    inventore quis enim et pariatur sit rem fugit quia, natus maiores?</p>
-            </div>
+        <div class="service-img">
+          <img
+            src="https://cdn2.hubspot.net/hubfs/53/web-design-statistics-2020.jpg"
+            class="img-fluid"
+            alt=""
+          />
         </div>
+      </div>
+      <div
+        class="d-flex justify-content-center align-items-start columns bg-gray"
+      >
+        <div class="service-img">
+          <img
+            src="https://www.usnews.com/dims4/USNEWS/7a6fb8a/2147483647/crop/2000x1334%2B0%2B2/resize/970x647/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F65%2F62%2Fc9cb60d24ac89d56462b1228574a%2F201009-codingcomputer-stock.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="service">
+          <h2>Web Development</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias neque asperiores, dolorem voluptas animi nam corrupti
+            fugiat saepe. Accusamus temporibus, labore omnis natus consectetur
+            dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo
+            excepturi a, nostrum, velit quis consequatur iste fugit beatae sed
+            eligendi perspiciatis ratione porro eum? Pariatur officia eveniet
+            quae et blanditiis veritatis placeat, animi nihil obcaecati tempore
+            id saepe provident porro neque eligendi atque dolore veniam amet
+            velit ex illum. Eveniet, est. Ratione vel ullam omnis dicta esse
+            consequuntur dolore reiciendis asperiores explicabo ex eos inventore
+            quis enim et pariatur sit rem fugit quia, natus maiores?
+          </p>
+        </div>
+      </div>
 
-        <div class="columns">
-            <div class="col service">
-                <h2>Digital Marketing</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias neque asperiores,
-                    dolorem voluptas animi nam corrupti fugiat saepe. Accusamus temporibus, labore omnis natus
-                    consectetur dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo excepturi a,
-                    nostrum, velit quis consequatur iste fugit beatae sed eligendi perspiciatis ratione porro eum?
-                    Pariatur officia eveniet quae et blanditiis veritatis placeat, animi nihil obcaecati tempore id
-                    saepe provident porro neque eligendi atque dolore veniam amet velit ex illum. Eveniet, est.
-                    Ratione vel ullam omnis dicta esse consequuntur dolore reiciendis asperiores explicabo ex eos
-                    inventore quis enim et pariatur sit rem fugit quia, natus maiores?</p>
-            </div>
-            <div class="col service-img">
-                <img src="https://blog.hubspot.com/hubfs/digital-marketing-tools.jpg" class="img-fluid" alt="">
-            </div>
+      <div class="d-flex justify-content-center align-items-start columns">
+        <div class="service">
+          <h2>Digital Marketing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias neque asperiores, dolorem voluptas animi nam corrupti
+            fugiat saepe. Accusamus temporibus, labore omnis natus consectetur
+            dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo
+            excepturi a, nostrum, velit quis consequatur iste fugit beatae sed
+            eligendi perspiciatis ratione porro eum? Pariatur officia eveniet
+            quae et blanditiis veritatis placeat, animi nihil obcaecati tempore
+            id saepe provident porro neque eligendi atque dolore veniam amet
+            velit ex illum. Eveniet, est. Ratione vel ullam omnis dicta esse
+            consequuntur dolore reiciendis asperiores explicabo ex eos inventore
+            quis enim et pariatur sit rem fugit quia, natus maiores?
+          </p>
         </div>
+        <div class="service-img">
+          <img
+            src="https://blog.hubspot.com/hubfs/digital-marketing-tools.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
 
-        <div class="columns bg-gray">
-            <div class="col service-img">
-                <img src=https://s0.hfdstatic.com/sites/business-playbook/pubimgs/1444665687048.jpg?v=2019-07-02_072048018"
-                    class="img-fluid" alt="">
-            </div>
-            <div class="col service">
-                <h2>Brand Designing</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias neque asperiores,
-                    dolorem voluptas animi nam corrupti fugiat saepe. Accusamus temporibus, labore omnis natus
-                    consectetur dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo excepturi a,
-                    nostrum, velit quis consequatur iste fugit beatae sed eligendi perspiciatis ratione porro eum?
-                    Pariatur officia eveniet quae et blanditiis veritatis placeat, animi nihil obcaecati tempore id
-                    saepe provident porro neque eligendi atque dolore veniam amet velit ex illum. Eveniet, est.
-                    Ratione vel ullam omnis dicta esse consequuntur dolore reiciendis asperiores explicabo ex eos
-                    inventore quis enim et pariatur sit rem fugit quia, natus maiores?</p>
-            </div>
+      <div
+        class="d-flex justify-content-center align-items-start columns bg-gray"
+      >
+        <div class="service-img">
+          <img
+          src=https://s0.hfdstatic.com/sites/business-playbook/pubimgs/1444665687048.jpg?v=2019-07-02_072048018"
+          class="img-fluid" alt="">
         </div>
+        <div class="service">
+          <h2>Brand Designing</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            molestias neque asperiores, dolorem voluptas animi nam corrupti
+            fugiat saepe. Accusamus temporibus, labore omnis natus consectetur
+            dolorum! Incidunt repudiandae at architecto laudantium, ut quae illo
+            excepturi a, nostrum, velit quis consequatur iste fugit beatae sed
+            eligendi perspiciatis ratione porro eum? Pariatur officia eveniet
+            quae et blanditiis veritatis placeat, animi nihil obcaecati tempore
+            id saepe provident porro neque eligendi atque dolore veniam amet
+            velit ex illum. Eveniet, est. Ratione vel ullam omnis dicta esse
+            consequuntur dolore reiciendis asperiores explicabo ex eos inventore
+            quis enim et pariatur sit rem fugit quia, natus maiores?
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="footer">
-        <div class="container">
-            <div class="columns">
-                <div class="col">
-                    <h1>
-                        <a href="../index.html" class="logo">Pure Digital</a>
-                    </h1>
-                    <div class="social-media-container">
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                        <div class="social-media">
-                            <a href="#">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Company</a></h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Values</a></li>
-                        <li><a href="#">Quality Assurance</a></li>
-                        <li><a href="#">Partnership</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Careers</a></h3>
-                    <ul>
-                        <li><a href="#">Job</a></li>
-                        <li><a href="#">Intership</a></li>
-                        <li><a href="#">Apply</a></li>
-                    </ul>
-                    <h3><a href="#">Clients</a></h3>
-                    <ul>
-                        <li><a href="#">Our Clients</a></li>
-                        <li><a href="#">Industries</a></li>
-                        <li><a href="#">Client Reviews</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Contact Us</a></h3>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Request A Quote</a></li>
-                        <li><a href="#">News & Press</a></li>
-                        <li><a href="#">FAQS</a></li>
-                    </ul>
-                    <h3><a href="#">Our Works</a></h3>
-                    <ul>
-                        <li><a href="#">Our Portfolio</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3><a href="#">Services</a></h3>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Branding & Multimedia Designing</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-12">
+            <h1>
+              <a href="index.html" class="logo">Pure Digital</a>
+            </h1>
+            <div class="d-flex align-items-center">
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-media px-3">
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
+          </div>
 
-            <div class="bottom-footer">
-                <p>&copy; VictorAyala <span id="year"></span></p>
-            </div>
+          <div class="col-md-2">
+            <h3><a href="#">Company</a></h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Quality Assurance</a></li>
+              <li><a href="#">Partnership</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Careers</a></h3>
+            <ul>
+              <li><a href="#">Job</a></li>
+              <li><a href="#">Intership</a></li>
+              <li><a href="#">Apply</a></li>
+            </ul>
+            <h3><a href="#">Clients</a></h3>
+            <ul>
+              <li><a href="#">Our Clients</a></li>
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Client Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Contact Us</a></h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Request A Quote</a></li>
+              <li><a href="#">News & Press</a></li>
+              <li><a href="#">FAQS</a></li>
+            </ul>
+            <h3><a href="#">Our Works</a></h3>
+            <ul>
+              <li><a href="#">Our Portfolio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Branding & Multimedia Designing</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-</body>
-<script src="/js/main.js"></script>
 
+        <div class="bottom-footer">
+          <p>
+            &copy; VictorAyala
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/slider.js"></script>
 </html>

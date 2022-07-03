@@ -1,0 +1,224 @@
+@import 'variables';
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        background: $white !important;
+
+        .navbar-brand {
+            color: $darkText !important;
+        }
+
+        .nav-item {
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                background: $darkText;
+            }
+
+            &:hover a {
+                background: $white;
+            }
+
+            .nav-link {
+                text-align: center;
+                color: $darkText !important;
+                padding: 1rem;
+                display: block;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: $darkText;
+                    color: $white !important;
+                }
+
+                &:hover a {
+                    color: $white;
+                }
+            }
+        }
+
+        .light-btn {
+            text-align: center;
+            display: block !important;
+            color: $darkText !important;
+            // border-color: $darkText;
+            transition: none;
+            font-size: 1.1rem;
+            font-weight: 300;
+
+            &:hover {
+                background: $darkText;
+                color: $white !important;
+            }
+        }
+    }
+
+    #hero {
+        .hero-content {
+            h1 {
+                font-size: 32px !important;
+            }
+        }
+    }
+
+    #request-quote-container {
+        h3 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    #our-services {
+        .section-heading {
+            h2 {
+                font-size: 30px !important;
+                font-weight: 400;
+            }
+        }
+
+        .service {
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #expertise-in-development {
+        .section-heading {
+            h1 {
+                font-size: 30px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    #testimonals {
+        h1 {
+            font-size: 30px !important;
+        }
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        span {
+            font-size: 18px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+    }
+
+    #brands {
+        h1 {
+            font-size: 24px !important;
+        }
+    }
+
+    #footer {
+        .columns {
+            flex-wrap: wrap !important;
+            grid-gap: 0 !important;
+            justify-content: flex-start !important;
+        }
+
+        .social-media-container {
+            justify-content: flex-start !important;
+        }
+
+        .col {
+            width: 300px;
+        }
+    }
+
+    #about-us {
+        h1 {
+            text-align: center;
+            font-size: 40px !important;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .columns {
+            flex-wrap: wrap !important;
+        }
+    }
+
+    #meet-team {
+        h1 {
+            font-size: 40px !important;
+        }
+
+        .columns {
+            flex-wrap: wrap;
+        }
+
+        .team-container {
+            justify-content: center;
+
+            .team {
+                width: 300px;
+            }
+        }
+    }
+
+    .portfolio {
+        .columns {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .work {
+            width: 100% !important;
+        }
+    }
+
+    #services {
+        .columns {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    #contact {
+        .columns {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-size: 40px !important;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .mobile-view {
+        display: block !important;
+    }
+
+    .hero-page {
+        h1 {
+            font-size: 42px !important;
+        }
+    }
+
+    .team {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,147 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    background: #fff !important;
+  }
+  .navbar .navbar-brand {
+    color: #1b1b1b !important;
+  }
+  .navbar .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .nav-item:hover {
+    background: #1b1b1b;
+  }
+  .navbar .nav-item:hover a {
+    background: #fff;
+  }
+  .navbar .nav-item .nav-link {
+    text-align: center;
+    color: #1b1b1b !important;
+    padding: 1rem;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar .nav-item .nav-link:hover {
+    background: #1b1b1b;
+    color: #fff !important;
+  }
+  .navbar .nav-item .nav-link:hover a {
+    color: #fff;
+  }
+  .navbar .light-btn {
+    text-align: center;
+    display: block !important;
+    color: #1b1b1b !important;
+    transition: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .navbar .light-btn:hover {
+    background: #1b1b1b;
+    color: #fff !important;
+  }
+  #hero .hero-content h1 {
+    font-size: 32px !important;
+  }
+  #request-quote-container h3 {
+    margin-bottom: 2rem;
+  }
+  #our-services .section-heading h2 {
+    font-size: 30px !important;
+    font-weight: 400;
+  }
+  #our-services .service h3 {
+    font-size: 20px;
+  }
+  #our-services .service p {
+    font-size: 14px;
+  }
+  #expertise-in-development .section-heading h1 {
+    font-size: 30px !important;
+  }
+  #expertise-in-development .section-heading p {
+    font-size: 16px !important;
+  }
+  #testimonals h1 {
+    font-size: 30px !important;
+  }
+  #testimonals h3 {
+    font-size: 20px !important;
+  }
+  #testimonals span {
+    font-size: 18px !important;
+  }
+  #testimonals p {
+    font-size: 14px !important;
+  }
+  #brands h1 {
+    font-size: 24px !important;
+  }
+  #footer .columns {
+    flex-wrap: wrap !important;
+    grid-gap: 0 !important;
+    justify-content: flex-start !important;
+  }
+  #footer .social-media-container {
+    justify-content: flex-start !important;
+  }
+  #footer .col {
+    width: 300px;
+  }
+  #about-us h1 {
+    text-align: center;
+    font-size: 40px !important;
+  }
+  #about-us p {
+    font-size: 16px;
+  }
+  #about-us .columns {
+    flex-wrap: wrap !important;
+  }
+  #meet-team h1 {
+    font-size: 40px !important;
+  }
+  #meet-team .columns {
+    flex-wrap: wrap;
+  }
+  #meet-team .team-container {
+    justify-content: center;
+  }
+  #meet-team .team-container .team {
+    width: 300px;
+  }
+  .portfolio .columns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio .work {
+    width: 100% !important;
+  }
+  #services .columns {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #contact .columns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #contact .columns h1 {
+    text-align: center;
+    font-size: 40px !important;
+  }
+  #contact .columns p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .mobile-view {
+    display: block !important;
+  }
+  .hero-page h1 {
+    font-size: 42px !important;
+  }
+  .team {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

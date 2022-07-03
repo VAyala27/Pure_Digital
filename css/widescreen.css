@@ -1,0 +1,57 @@
+@media (max-width: 1368px) and (min-width: 912px) and (orientation: landscape) {
+  .navbar {
+    background: #fff !important;
+  }
+  .navbar .navbar-brand {
+    color: #131313 !important;
+    font-size: 26px !important;
+  }
+  .navbar .nav-link {
+    color: #000 !important;
+  }
+  .navbar .nav-link:hover {
+    color: #131313 !important;
+  }
+  .navbar .navbar-nav {
+    align-items: center;
+  }
+  .navbar .light-btn {
+    text-align: center;
+    display: block !important;
+    color: #131313 !important;
+    border-color: #131313;
+    transition: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  .navbar .light-btn:hover {
+    background: #131313;
+    color: #fff !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    background: #fff !important;
+  }
+  .navbar .navbar-brand {
+    color: #131313 !important;
+    font-size: 26px !important;
+  }
+  .navbar .nav-link {
+    color: #000 !important;
+    text-align: center;
+  }
+  .navbar .nav-link:hover {
+    color: #131313 !important;
+  }
+  .navbar .light-btn {
+    text-align: center;
+    display: block !important;
+    color: #131313 !important;
+    transition: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=widescreen.css.map */
