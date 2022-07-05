@@ -125,18 +125,20 @@
     }
 
     #footer {
-        .columns {
-            flex-wrap: wrap !important;
-            grid-gap: 0 !important;
-            justify-content: flex-start !important;
+        .social-media {
+            margin-bottom: 1.5rem;
         }
 
         .social-media-container {
             justify-content: flex-start !important;
         }
 
-        .col {
-            width: 300px;
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        .row {
+            margin-bottom: 1.5rem !important;
         }
     }
 
@@ -174,37 +176,20 @@
     }
 
     .portfolio {
-        .columns {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
         .work {
             width: 100% !important;
         }
     }
 
-    #services {
-        .columns {
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-    }
-
     #contact {
-        .columns {
-            flex-wrap: wrap;
-            justify-content: center;
+        h1 {
+            text-align: center;
+            font-size: 40px !important;
+        }
 
-            h1 {
-                text-align: center;
-                font-size: 40px !important;
-            }
-
-            p {
-                text-align: center;
-                margin-bottom: 2rem;
-            }
+        p {
+            text-align: center;
+            margin-bottom: 2rem;
         }
     }
 
