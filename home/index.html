@@ -10,21 +10,36 @@
     <title>Digital Agency</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
     />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/widescreen.css" />
@@ -37,33 +52,32 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/index.html" class="nav-link active">Home</a>
+              <a href="/home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="/about" class="nav-link">About</a>
             </li>
             <li class="nav-item"><a href="/work" class="nav-link">Work</a></li>
             <li class="nav-item">
-              <a href="/services" class="nav-link">Services</a>
+              <a href="/services" class="nav-link active">Services</a>
             </li>
             <li class="nav-item">
               <a href="/contact" class="nav-link">Contact</a>
             </li>
             <form class="form-inline d-none align-self-center ms-2">
-                <a href class="btn light-btn"">Request A Quote</a>
-              </form>
+              <a href class="btn light-btn">Request A Quote</a>
+            </form>
           </ul>
           <ul class="navbar-nav ms-auto">
             <a class="light-btn" href="/request_quote">Request A Quote</a>
@@ -84,11 +98,13 @@
 
     <div id="request-quote-container">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-8 col-sm-12">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-12 col-12">
             <h3>Let’s Get Started on your project</h3>
           </div>
-          <div class="col-lg-6 col-md-4 col-sm-12 text-lg-left text-sm-center">
+          <div
+            class="col-lg-6 col-md-4 col-sm-12 col-12 text-lg-left text-sm-center"
+          >
             <a class="dark-btn" href="/request_quote">Request A Quote</a>
           </div>
         </div>
@@ -101,7 +117,7 @@
           <h2>Our Services</h2>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="service">
               <i class="fa-solid fa-crop-simple"></i>
               <h3>Web Design</h3>
@@ -112,7 +128,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="service">
               <i class="fa-solid fa-layer-group"></i>
               <h3>Web Development</h3>
@@ -123,7 +139,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="service">
               <i class="fa-solid fa-desktop"></i>
               <h3>Digital Marketing</h3>
@@ -134,7 +150,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
             <div class="service">
               <i class="fa-solid fa-sliders"></i>
               <h3>Brand Design</h3>
@@ -145,7 +161,7 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-sm-12 text-center mx-auto">
+          <div class="col-lg-2 col-md-6 col-sm-12 text-center mx-auto mt-4">
             <div class="dark-btn">Read More</div>
           </div>
         </div>
@@ -221,7 +237,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/html-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/htmllogo.jpg"
                   alt=""
                 />
               </div>
@@ -233,7 +249,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/css-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/csslogo.jpg"
                   alt=""
                 />
               </div>
@@ -245,7 +261,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/java-script-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/javascriptlogo.jpg"
                   alt=""
                 />
               </div>
@@ -257,7 +273,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/jquery-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/jquerylogo.jpg"
                   alt=""
                 />
               </div>
@@ -269,7 +285,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/photoshop-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/photoshoplogo.jpg"
                   alt=""
                 />
               </div>
@@ -281,7 +297,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/php-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/phplogo.jpg"
                   alt=""
                 />
               </div>
@@ -295,7 +311,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/react.jpg"
+                  src="https://u.cubeupload.com/lit_flame/react.jpg"
                   alt=""
                 />
               </div>
@@ -307,7 +323,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/laravel-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/laravellogo.jpg"
                   alt=""
                 />
               </div>
@@ -319,7 +335,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/node-js-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/nodejslogo.jpg"
                   alt=""
                 />
               </div>
@@ -331,7 +347,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/wordpress-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/wordpresslogo.jpg"
                   alt=""
                 />
               </div>
@@ -343,7 +359,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/sketch-logo.jpg"
+                  src="https://u.cubeupload.com/lit_flame/sketchlogo.jpg"
                   alt=""
                 />
               </div>
@@ -355,7 +371,7 @@
               <div class="service-img">
                 <img
                   class="img-fluid"
-                  src="https://www.ideamagix.com/assets/images/services-logos/expressjs.jpg"
+                  src="https://u.cubeupload.com/lit_flame/expressjs.jpg"
                   alt=""
                 />
               </div>
@@ -368,62 +384,63 @@
 
     <section id="testimonals">
       <div class="container">
-        <h1>Testimonals</h1>
+        <h1 class="mb-5">Testimonals</h1>
         <div class="testimonal-slider">
           <div class="testimonal">
-            <h3>John Smith</h3>
-            <span>Actor</span>
             <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="https://u.cubeupload.com/lit_flame/pexelsphoto8350413ez.jpg"
               class="img-fluid"
               alt=""
             />
+            <h3>John D.</h3>
+            <span>January 11, 2024</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
               dignissimos facere quod earum veritatis impedit, maxime laudantium
-              ut mollitia delectus iste voluptate odit error.
+              ut mollitia delectus iste voluptate odit error."
             </p>
           </div>
           <div class="testimonal">
-            <h3>John Smith</h3>
-            <span>Actor</span>
             <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="https://u.cubeupload.com/lit_flame/9e1restauranttestimonia.jpg"
               class="img-fluid"
               alt=""
             />
+            <h3>Mario S.</h3>
+            <span>January 11, 2024</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
               dignissimos facere quod earum veritatis impedit, maxime laudantium
-              ut mollitia delectus iste voluptate odit error.
+              ut mollitia delectus iste voluptate odit error."
             </p>
           </div>
           <div class="testimonal">
-            <h3>John Smith</h3>
-            <span>Actor</span>
             <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="https://u.cubeupload.com/lit_flame/restauranttestimonia.jpg"
               class="img-fluid"
               alt=""
             />
+            <h3>Angelina J.</h3>
+            <span>January 11, 2024</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
               dignissimos facere quod earum veritatis impedit, maxime laudantium
-              ut mollitia delectus iste voluptate odit error.
+              ut mollitia delectus iste voluptate odit error."
             </p>
           </div>
           <div class="testimonal">
-            <h3>John Smith</h3>
-            <span>Actor</span>
+           
             <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            src="https://u.cubeupload.com/lit_flame/16arestauranttestimonia.jpg"
               class="img-fluid"
               alt=""
             />
+            <h3>Anna S.</h3>
+            <span>January 11, 2024</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe
               dignissimos facere quod earum veritatis impedit, maxime laudantium
-              ut mollitia delectus iste voluptate odit error.
+              ut mollitia delectus iste voluptate odit error."
             </p>
           </div>
         </div>
@@ -436,37 +453,37 @@
         <ul class="slider">
           <img
             class="img-fluid"
-            src="https://i.pinimg.com/originals/0a/2c/f4/0a2cf43b59ca41e11646b17b900140dd.png"
+            src="https://u.cubeupload.com/lit_flame/puredigitalworkbrand.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://logos-world.net/wp-content/uploads/2020/03/Coca-Cola-Logo.png"
+            src="https://u.cubeupload.com/lit_flame/puredigitalbrand4.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://images.g2crowd.com/uploads/product/image/8dfd1a922e19ef6ffc78a2bbe094855c/shopify.png"
+            src="https://u.cubeupload.com/lit_flame/puredigitalbrand5.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://freepngimg.com/thumb/nike/28258-8-nike-logo-transparent-background.png"
+            src="https://u.cubeupload.com/lit_flame/amazonofficiallogo70.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://wpblog.zyro.com/wp-content/uploads/2022/01/Amazon-Logo.png"
+            src="https://u.cubeupload.com/lit_flame/nike4logopngtranspar.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://miro.medium.com/max/1024/1*m-MRdf9eixUH3gitHZQi-g.png"
+            src="https://u.cubeupload.com/lit_flame/puredigitalbrand3.png"
             alt=""
           />
           <img
             class="img-fluid"
-            src="https://www.freepnglogos.com/uploads/cartoon-network-png-logo/world-brand-cartoon-network-logo-png-22.png"
+            src="https://u.cubeupload.com/lit_flame/puredigitalbrand2.png"
             alt=""
           />
         </ul>
