@@ -25,7 +25,7 @@ section {
     background: $bgGray;
 }
 
-bg-transparent {
+.bg-transparent {
     background: transparent !important;
 }
 
@@ -133,27 +133,27 @@ bg-transparent {
 }
 
 .about-hero {
-    background: url('https://images.pexels.com/photos/461064/pexels-photo-461064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+    background: url('https://u.cubeupload.com/lit_flame/puredigitalwhoweare.jpg') no-repeat center/cover;
     position: relative;
 }
 
 .services-hero {
-    background: url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+    background: url('https://u.cubeupload.com/lit_flame/puredigitalourservic.jpg') no-repeat center/cover;
     position: relative;
 }
 
 .work-hero {
-    background: url('https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+    background: url('https://u.cubeupload.com/lit_flame/puredigitalourwork.jpg') no-repeat center/cover;
     position: relative;
 }
 
 .contact-hero {
-    background: url('https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+    background: url('https://u.cubeupload.com/lit_flame/puredigitalcontactus.jpg') no-repeat center/cover;
     position: relative;
 }
 
 .request-hero {
-    background: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+    background: url("https://u.cubeupload.com/lit_flame/puredigitalrequestqu.jpeg") no-repeat center/cover;
     position: relative;
 }
 
@@ -203,10 +203,7 @@ bg-transparent {
 // NAVBAR
 .navbar {
     transition: background .4s ease-in-out;
-
-    .container {
-        max-width: 1300px;
-    }
+    background: transparent !important;
 
     .navbar-brand {
         color: $white !important;
@@ -248,7 +245,7 @@ bg-transparent {
 
 // HERO
 #hero {
-    background: url('https://tribulant.com/blog/wp-content/uploads/2020/12/web-design-AdobeStock_260516386.jpeg') no-repeat center/cover;
+    background: url('https://u.cubeupload.com/lit_flame/puredigitalbg.jpeg') no-repeat center/cover;
     object-fit: contain;
     height: 100vh;
     width: 100%;
@@ -293,9 +290,6 @@ bg-transparent {
     }
 
     .service {
-        text-align: center;
-        padding: 1rem;
-
         i {
             font-size: 1.7rem;
             margin-bottom: .7rem;
@@ -353,10 +347,6 @@ bg-transparent {
 #expertise-in-development {
     background: $bgGray;
 
-    .container {
-        max-width: 1400px;
-    }
-
     .service-col {
         background: $white;
         padding: 1rem 1.2rem;
@@ -386,12 +376,20 @@ bg-transparent {
         position: absolute;
         top: 45%;
         right: 0;
+        background: #000;
+        color: #fff;
+        border-radius: 50%;
+        padding: 12px;
     }
 
     .fa-arrow-left {
         position: absolute;
         top: 45%;
         left: 0;
+        background: #000;
+        color: #fff;
+        border-radius: 50%;
+        padding: 12px;
     }
 
     h1 {
@@ -420,7 +418,10 @@ bg-transparent {
 
         img {
             width: 150px;
+            height: 150px;
             border-radius: 50%;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
         }
 
         p {
@@ -429,6 +430,7 @@ bg-transparent {
             letter-spacing: .5px;
             margin-bottom: 1rem;
             text-align: center;
+            font-style: italic;
         }
     }
 }
@@ -437,9 +439,6 @@ bg-transparent {
 #footer {
     background: $bgBlack;
     padding-bottom: 1rem;
-
-    .container {
-        max-width: 1300px;
 
         .logo {
             color: $white;
@@ -506,9 +505,6 @@ bg-transparent {
         }
     }
 
-
-}
-
 .bottom-footer {
     p {
         text-align: center;
@@ -521,9 +517,6 @@ bg-transparent {
 
 // ABOUT US
 #about-us {
-    .container {
-        max-width: 1300px;
-    }
 
 
     h1 {
@@ -557,8 +550,6 @@ bg-transparent {
     }
 
     .team-container {
-
-
         .team {
             background: $white;
             overflow: hidden;
@@ -619,15 +610,8 @@ bg-transparent {
 
 // SERVICES
 #services {
-    padding-bottom: 0;
-
-    .columns {
-        gap: 5rem;
-        padding: 5rem 0;
-
         .service {
             text-align: left;
-            width: 650px;
             padding: 0 1.2rem;
 
             h2 {
@@ -644,17 +628,14 @@ bg-transparent {
 
         .service-img {
             img {
-                width: 650px;
+                width: 100%;
             }
         }
     }
-}
+
 
 // PORTFOLIO
 #our-work {
-    .container {
-        max-width: 1500px;
-    }
 
     background: $bgGray;
 
@@ -695,7 +676,7 @@ bg-transparent {
                 cursor: pointer;
 
                 img {
-                    height: 350px;
+                    height: 275px;
                     width: 100%;
                 }
 
@@ -833,7 +814,6 @@ bg-transparent {
     background: $bgGray;
 
     .container {
-        max-width: 1300px;
         overflow: hidden !important;
 
         h1 {
