@@ -671,6 +671,7 @@ section {
 #brands .container .slider img {
   height: 90px;
   margin: 0 1.5rem;
+  object-fit: contain;
 }
 
 #request-quote h1 {
